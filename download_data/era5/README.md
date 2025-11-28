@@ -48,29 +48,6 @@ nohup ./download_era5.sh 2022 2025 sea_surface_temperature \
 
 
 
-===================================
-### CAMS PM10 / PM2.5 Download Script
-===================================
-
-# Usage:
-./download_cams.sh START_YEAR END_YEAR VARIABLE OUTFILE
-
-# Variables:
-#   pm10   → particulate_matter_10um
-#   pm2p5  → particulate_matter_2p5um
-
-# Example: Download PM10 from 2022 to 2025
-nohup ./download_cams.sh 2022 2025 pm10 \
-/work/cmcc/gc02720/poalert/cams/pm10_2022-2025.nc > log_pm10.txt 2>&1 &
-
-# Example: Download PM2.5
-nohup ./download_cams.sh 2022 2025 pm2p5 \
-/work/cmcc/gc02720/poalert/cams/pm25_2022-2025.nc > log_pm25.txt 2>&1 &
-
-
-
-
-
 ### Converting
 
 

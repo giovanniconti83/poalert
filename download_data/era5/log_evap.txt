@@ -1,22 +1,0 @@
-nohup: ignoring input
-Running: /tmp/tmp.CHZWsfFWEr.py
-2025-11-28 12:18:47,195 INFO Request ID is 4d4739a2-1fe8-40f6-9afd-c8a499bc1498
-2025-11-28 12:18:47,257 INFO status has been updated to accepted
-2025-11-28 12:45:05,664 INFO status has been updated to running
-2025-11-28 13:03:06,941 INFO status has been updated to successful
-1da034cd24194b8c58a00c9c166772bf.grib:   0%|          | 0.00/629M [00:00<?, ?B/s]                                                                                 Traceback (most recent call last):
-  File "/tmp/tmp.CHZWsfFWEr.py", line 29, in <module>
-    ).download("/work/cmcc/gc02720/poalert/era5/evap_2022-2025.grib")
-      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/work/cmcc/gc02720/.conda/envs/cds_nlq/lib/python3.11/site-packages/cads_api_client/legacy_api_client.py", line 147, in wrapper
-    return func(*args, **kwargs)
-           ^^^^^^^^^^^^^^^^^^^^^
-  File "/work/cmcc/gc02720/.conda/envs/cds_nlq/lib/python3.11/site-packages/cads_api_client/processing.py", line 641, in download
-    multiurl.download(
-  File "/work/cmcc/gc02720/.conda/envs/cds_nlq/lib/python3.11/site-packages/multiurl/downloader.py", line 111, in download
-    return Downloader(url, **kwargs).download(target)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/work/cmcc/gc02720/.conda/envs/cds_nlq/lib/python3.11/site-packages/multiurl/base.py", line 128, in download
-    with open(download, mode) as f:
-         ^^^^^^^^^^^^^^^^^^^^
-FileNotFoundError: [Errno 2] No such file or directory: '/work/cmcc/gc02720/poalert/era5/evap_2022-2025.grib'

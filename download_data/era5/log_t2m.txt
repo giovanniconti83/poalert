@@ -1,22 +1,0 @@
-nohup: ignoring input
-Running: /tmp/tmp.oV2tu83KSV.py
-2025-11-28 12:18:47,408 INFO Request ID is 79cd47d1-ed5b-4ed8-be0c-0d1fd221799a
-2025-11-28 12:18:49,630 INFO status has been updated to accepted
-2025-11-28 13:21:10,166 INFO status has been updated to running
-2025-11-28 13:25:10,376 INFO status has been updated to successful
-8e02c1b7ac779fa13e1b22eb91f6bbb1.grib:   0%|          | 0.00/618M [00:00<?, ?B/s]                                                                                 Traceback (most recent call last):
-  File "/tmp/tmp.oV2tu83KSV.py", line 29, in <module>
-    ).download("/work/cmcc/gc02720/poalert/era5/t2m_2022-2025.grib")
-      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/work/cmcc/gc02720/.conda/envs/cds_nlq/lib/python3.11/site-packages/cads_api_client/legacy_api_client.py", line 147, in wrapper
-    return func(*args, **kwargs)
-           ^^^^^^^^^^^^^^^^^^^^^
-  File "/work/cmcc/gc02720/.conda/envs/cds_nlq/lib/python3.11/site-packages/cads_api_client/processing.py", line 641, in download
-    multiurl.download(
-  File "/work/cmcc/gc02720/.conda/envs/cds_nlq/lib/python3.11/site-packages/multiurl/downloader.py", line 111, in download
-    return Downloader(url, **kwargs).download(target)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/work/cmcc/gc02720/.conda/envs/cds_nlq/lib/python3.11/site-packages/multiurl/base.py", line 128, in download
-    with open(download, mode) as f:
-         ^^^^^^^^^^^^^^^^^^^^
-FileNotFoundError: [Errno 2] No such file or directory: '/work/cmcc/gc02720/poalert/era5/t2m_2022-2025.grib'

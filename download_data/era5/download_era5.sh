@@ -14,6 +14,9 @@ END=${2:? "END year required"}
 VAR=${3:? "Variable name required"}
 OUTFILE=${4:? "Output file required"}
 
+OUTDIR=$(dirname "${OUTFILE}")
+mkdir -p "${OUTDIR}"
+
 # Build year list: "2022","2023","2024","2025"
 YEAR_LIST=""
 for Y in $(seq ${START} ${END}); do

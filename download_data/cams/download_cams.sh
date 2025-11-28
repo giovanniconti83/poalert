@@ -22,6 +22,10 @@ END_DATE_RAW="$2"
 VAR="$3"
 OUTFILE="$4"
 
+OUTDIR=$(dirname "${OUTFILE}")
+mkdir -p "${OUTDIR}"
+
+
 # Map variable names
 case "${VAR}" in
     pm10)  CAMS_VAR="particulate_matter_10um" ;;
