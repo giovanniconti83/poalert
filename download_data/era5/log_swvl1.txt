@@ -1,0 +1,22 @@
+nohup: ignoring input
+Running: /tmp/tmp.LkqVeWLCqu.py
+2025-11-28 12:18:47,219 INFO Request ID is 635bc6db-3a33-46a4-82eb-49b96b09d789
+2025-11-28 12:18:47,269 INFO status has been updated to accepted
+2025-11-28 13:03:06,824 INFO status has been updated to running
+2025-11-28 13:11:07,494 INFO status has been updated to successful
+b14ff7e5a217fdc5f219764bda39ec99.grib:   0%|          | 0.00/618M [00:00<?, ?B/s]                                                                                 Traceback (most recent call last):
+  File "/tmp/tmp.LkqVeWLCqu.py", line 29, in <module>
+    ).download("/work/cmcc/gc02720/poalert/era5/swvl1_2022-2025.grib")
+      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/work/cmcc/gc02720/.conda/envs/cds_nlq/lib/python3.11/site-packages/cads_api_client/legacy_api_client.py", line 147, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/work/cmcc/gc02720/.conda/envs/cds_nlq/lib/python3.11/site-packages/cads_api_client/processing.py", line 641, in download
+    multiurl.download(
+  File "/work/cmcc/gc02720/.conda/envs/cds_nlq/lib/python3.11/site-packages/multiurl/downloader.py", line 111, in download
+    return Downloader(url, **kwargs).download(target)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/work/cmcc/gc02720/.conda/envs/cds_nlq/lib/python3.11/site-packages/multiurl/base.py", line 128, in download
+    with open(download, mode) as f:
+         ^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/work/cmcc/gc02720/poalert/era5/swvl1_2022-2025.grib'
